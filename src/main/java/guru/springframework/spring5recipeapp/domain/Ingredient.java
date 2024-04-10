@@ -1,9 +1,7 @@
 package guru.springframework.spring5recipeapp.domain;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
@@ -11,7 +9,8 @@ import java.math.BigDecimal;
  * Created by bogdan.kalika@gmail.com
  * Date: 3/28/2024
  */
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @EqualsAndHashCode(exclude = {"recipe"})
 @Entity
