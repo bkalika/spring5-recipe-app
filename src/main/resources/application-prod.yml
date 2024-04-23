@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: spring5-recipe-app
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQLDialect
+    database: mysql
+    show-sql: false
+#    properties:
+#      javax:
+#        persistence:
+#          schema-generation:
+#            create-source: metadata
+#            scripts:
+#              action: create
+#              create-target: guru_database_create.sql
+  datasource:
+    url: jdbc:mysql://localhost:3306/sfg_prod
+    username: sfg_prod_user
+    password: guru
+  sql:
+    init:
+      platform: mysql
+logging:
+  level:
+    guru:
+      springframework: debug
